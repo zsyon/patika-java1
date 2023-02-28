@@ -9,7 +9,12 @@ public class kdvHesaplama {
     System.out.print("Ücret Tutarını Giriniz : ");
     tutar = input.nextDouble();
 
-    System.out.print("KDV'siz Fiyat : " + tutar);
+    double kdvli = (Kdv*tutar) + tutar;
+    double kdvTutari = kdvli - tutar;
+
+    System.out.println("KDV'siz Fiyat : " + tutar);
+    System.out.println("KDV'li Fiyat : " + kdvli);
+    System.out.println("KDV Tutarı : " + kdvTutari);
 
 
 
