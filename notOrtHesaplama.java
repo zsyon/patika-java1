@@ -2,7 +2,6 @@
  * notOrtHesaplama
  */
 import java.util.Scanner;
-import java.util.SortedMap;
 
 public class notOrtHesaplama {
   public static void main(String[] args) {
@@ -32,8 +31,15 @@ public class notOrtHesaplama {
     float ort;
 
     ort = (mat+fizik+kimya+turce+tarih+muzuk) / 6 ;
+
+
     System.out.print("Derlerin ortalaması : ");
-    System.out.print(ort);
+    System.out.println(ort);
+
+    boolean durum = ort > 60;
+
+    String sonuc =  durum ? "Sınıfı Geçti" : "Sınıfta Kaldı";
+    System.out.println(sonuc);
 
   }
 }
