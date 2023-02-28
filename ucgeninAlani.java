@@ -18,6 +18,14 @@ public class ucgeninAlani {
     double cevre = kenar1+kenar2+kenar3;
     System.out.println(cevre);
 
+    double u = cevre / 2;
+    double alan;
+
+    alan = u*(u - kenar1)*(u - kenar2)*(u - kenar3);
+    System.out.println(alan);
+
+  
+
   }
   
 }
