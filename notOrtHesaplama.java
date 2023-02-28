@@ -9,25 +9,31 @@ public class notOrtHesaplama {
 
     Scanner input = new Scanner(System.in);
 
-    int mat ,fizik ,kimya ,turce, tarih, muzuk ,ort;
+    float mat ,fizik ,kimya ,turce, tarih, muzuk;
 
     System.out.print("Matematik Notu :");
-    mat = input.nextInt();
+    mat = input.nextFloat();
 
     System.out.print("Fizik Notu :");
-    fizik = input.nextInt();
+    fizik = input.nextFloat();
 
     System.out.print("Kimya Notu :");
-    kimya = input.nextInt();
+    kimya = input.nextFloat();
 
     System.out.print("Türkçe Notu :");
-    turce = input.nextInt();
+    turce = input.nextFloat();
 
     System.out.print("Tarih Notu :");
-    tarih = input.nextInt();
+    tarih = input.nextFloat();
 
     System.out.print("Müzik Notu :");
-    muzuk = input.nextInt();
+    muzuk = input.nextFloat();
+
+    float ort;
+
+    ort = (mat+fizik+kimya+turce+tarih+muzuk) / 6 ;
+    System.out.print("Derlerin ortalaması : ");
+    System.out.print(ort);
 
   }
 }
